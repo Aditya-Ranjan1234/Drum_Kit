@@ -89,18 +89,13 @@ background: url("./images/tom1.png");
     margin: 3rem ;
     font-family: 'Lobster', cursive;
     text-shadow: 5px 0 #232931;
-    font-size: 3rem;
+    font-size: 4rem;
     color: #4ECCA3;
   }
 
   img {
     height: 30%;
     align-self: center;
-  }
-
-  body {
-    height: 100%;
-    width: 100%;
   }
 
   button{
