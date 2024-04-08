@@ -9,6 +9,26 @@ for(var i=0;i<number;i++ )
     });
 }
 
+
+if (window.addEventListener) {
+  var once = false;
+  window.addEventListener('touchstart', function(){
+      if (!once) {
+          once = true;
+          var number=document.querySelectorAll(".drum").length;
+
+for(var i=0;i<number;i++ )
+{
+    document.querySelectorAll(".drum")[i].addEventListener("touch",function (){ 
+    var buttonInnerHTML=this.innerHTML;
+    playAudio(buttonInnerHTML);
+    buttonAnimation(buttonInnerHTML);
+    });
+}
+      }
+  });
+}
+
 document.addEventListener("keydown",function(event){
     playAudio(event.key);
     buttonAnimation(event.key);})
