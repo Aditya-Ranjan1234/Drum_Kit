@@ -1,6 +1,8 @@
 body {
   text-align: center;
   background-image: linear-gradient( 109.6deg,  rgba(102,51,153,1) 11.2%, rgba(2,0,4,1) 91.1% );
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -79,4 +81,30 @@ background: url("./images/tom1.png");
   text-align: center;
   margin: 10px;
   background-color: white;
+}
+
+@media (max-width: 896px) {
+
+  h1 {
+    margin: 3rem ;
+    font-family: 'Lobster', cursive;
+    text-shadow: 5px 0 #232931;
+    font-size: 3rem;
+    color: #4ECCA3;
+  }
+
+  img {
+    height: 30%;
+    align-self: center;
+  }
+
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  button{
+    width: 50%;
+    display: block;
+  }
 }
