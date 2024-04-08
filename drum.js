@@ -7,27 +7,15 @@ for(var i=0;i<number;i++ )
     playAudio(buttonInnerHTML);
     buttonAnimation(buttonInnerHTML);
     });
-}
 
-
-if (window.addEventListener) {
-  var once = false;
-  window.addEventListener('touchstart', function(){
-      if (!once) {
-          once = true;
-          var number=document.querySelectorAll(".drum").length;
-
-for(var i=0;i<number;i++ )
-{
-    document.querySelectorAll(".drum")[i].addEventListener("touch",function (){ 
-    var buttonInnerHTML=this.innerHTML;
-    playAudio(buttonInnerHTML);
-    buttonAnimation(buttonInnerHTML);
-    });
-}
-      }
+    document.querySelectorAll(".drum")[i].addEventListener("touchstart", function () {
+      var buttonInnerHTML = this.innerHTML;
+      playAudio(buttonInnerHTML);
+      buttonAnimation(buttonInnerHTML);
   });
 }
+
+
 
 document.addEventListener("keydown",function(event){
     playAudio(event.key);
