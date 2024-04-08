@@ -15,8 +15,6 @@ for(var i=0;i<number;i++ )
   });
 }
 
-
-
 document.addEventListener("keydown",function(event){
     playAudio(event.key);
     buttonAnimation(event.key);})
@@ -54,7 +52,6 @@ function playAudio(buttonInnerHTML)
           break;
         default: console.log(buttonInnerHTML);
     }
-
 }
 
 function buttonAnimation(key){
